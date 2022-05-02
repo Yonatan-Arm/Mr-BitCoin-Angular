@@ -1,0 +1,32 @@
+:host {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .transferfund-container {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+  
+    input {
+      min-width: 0;
+      width: 5rem;
+      font-size: 1rem;
+      margin-left: 10px;
+      border: none;
+    }
+    .transfer{
+      gap: 5px;
+      
+    }
+    .button{
+      width: 80px;
+      height: 30px;
+      border-radius: 12px;
+      cursor: pointer;
+    background: linear-gradient(#5fefed, rgb(137, 65, 185));
+
+    }
+  }
+  

@@ -1,0 +1,18 @@
+<section class="contact-preview flex align-center">
+    <a [routerLink]="[contact._id]" class="data">
+    <img
+    src="https://robohash.org/set_set5/{{contact.name}}.png"
+    alt="img"
+    width="70%"
+    height="70%"
+    />
+    <span>{{contact.name}}</span>
+</a>
+    <button  (click)="onRemoveContact($event,contact._id)" class="trash" >
+        <img src="assets/icons for misterBitcoin/delete.png" alt="trash"/>
+    </button>
+        <a [routerLink]="['/edit',contact._id]" class="edit">
+        <img src="assets/icons for misterBitcoin/edit.png" alt="edit"/>
+        </a>
+</section>
+

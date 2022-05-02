@@ -1,0 +1,21 @@
+<section class="contact-details">
+    <h2>Contact Details</h2>
+    <pre class="flex align-center">
+        <img
+        src="https://robohash.org/set_set5/{{contact.name}}.png"
+        alt="img"
+        />
+   name: {{contact.name}}
+   email: {{contact.email}}
+   phone: {{contact.phone}}
+</pre>
+<transfer-coins (transfer)="showMsg()" *ngIf="contact" [contact]="contact" ></transfer-coins>
+<move-list *ngIf="contact && user"  [contact]="contact" [user]="user" ></move-list>
+<div *ngIf="isMsgOn" class="msgBox">
+    order Aprroved ✔️
+</div>
+<button (click)="onBack()" class="back-img">
+    <img src="assets/icons for misterBitcoin/back.png" />
+</button>
+</section>
+

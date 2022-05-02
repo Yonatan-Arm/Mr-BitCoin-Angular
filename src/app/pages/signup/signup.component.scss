@@ -1,0 +1,30 @@
+:host {
+    height: 100%;
+    display: flex;
+  justify-content: center;
+  }
+  
+  .signup-form {
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+  
+      img {
+          height: 300px;
+          width: 300px;
+          border-radius: 20px;
+          box-shadow: 10px 10px 5px #222;
+      }
+      button{
+          width: 80px;
+          height: 30px;
+          border-radius: 12px;
+          cursor: pointer;
+        background: linear-gradient(#5fefed, rgb(137, 65, 185));
+
+      }
+  
+      * {
+          margin: 10px;
+      }
+  }

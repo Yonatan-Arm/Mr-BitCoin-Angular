@@ -1,0 +1,44 @@
+
+.contact-details{
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: 5px 5px 15px 5px #000000;
+    width: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    pre{
+        justify-content: center;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    button{
+        margin-top: 30px;
+    }
+    
+}
+
+.back-img{
+    margin-bottom: 10px;
+    img{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    img:hover{
+       transform: rotateX(180deg);
+       transition: .3s all;
+    }
+}
+
+.msgBox{
+    margin-left: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 24px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}

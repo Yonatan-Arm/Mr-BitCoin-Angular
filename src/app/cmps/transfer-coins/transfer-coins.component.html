@@ -1,0 +1,10 @@
+<div class=" flex align-center transferfund-container">
+    <h3>transfer coins to {{contact.name}} </h3>
+    <div class="flex align-center transfer wrap">
+        <span class="">
+            amount
+        </span>
+        <input type="number" placeholder="0" [(ngModel)]="amount">
+        <button (click)="onTransferCoins()"  class=" button">transfer</button>
+    </div>
+</div>

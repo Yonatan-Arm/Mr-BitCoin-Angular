@@ -1,0 +1,48 @@
+<section>
+  <header class="main-header flex-row">
+    <a [routerLink]="['']">
+      <h1>MisterBitcoin</h1>
+    </a>
+    <div class="flex header-features">
+      <a routerLink="signup" *ngIf="user?.name else singup"  (click)="logOut()"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        ><img src="assets/icons for misterBitcoin/logout-svgrepo-com.svg" />
+      </a>
+      <ng-template #singup>
+        <a  routerLink="signup"  (click)="logOut()"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ><img src="assets/icons for misterBitcoin/login-svgrepo-com.svg" />
+        </a>
+      </ng-template>
+      <a
+        routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <img src="assets/icons for misterBitcoin/home.png" />
+      </a>
+      <a
+        routerLink="contact"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <img src="assets/icons for misterBitcoin/users.png" />
+      </a>
+      <a
+        routerLink="statistic"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <img src="assets/icons for misterBitcoin/increase.png" />
+      </a>
+    </div>
+  </header>
+  <main class="app">
+    <router-outlet></router-outlet>
+  </main>
+  <footer class="main-footer flex-row align-center">
+    cofferights Yontan Arm 2022 <img src="assets/icons for misterBitcoin/bitcoin.png" />
+  </footer>
+</section>

@@ -1,0 +1,56 @@
+.main-header {
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+a{
+
+    text-decoration: unset;
+}
+    h1 {
+        font-size: 30px;
+        color: #222;
+    }
+}
+
+.header-features {
+    gap: 5px;
+
+    a {
+        width: 70px;
+        height: 30px;
+        border-radius: 7px;
+
+        img {
+            object-fit: contain;
+        }
+
+        img:hover {
+            transform: rotateX(360deg);
+            transition: 1s all;
+        }
+    }
+}
+
+.active {
+    color: whitesmoke;
+}
+
+.main-footer {
+    height: 10vh;
+    bottom:0 ;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    img{
+        width: 50px;
+        height: 45px;
+    }
+
+}
+
+.app {
+    padding: 0px 80px;
+    min-height: 80vh;
+}

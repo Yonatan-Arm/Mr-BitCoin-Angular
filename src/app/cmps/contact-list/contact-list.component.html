@@ -1,0 +1,7 @@
+<a [routerLink]="['/edit']">
+    <img src="../../../assets/icons for misterBitcoin/plus.png" alt="plus" class="add"/>
+</a>
+<contact-filter></contact-filter>
+<section class="contact-list flex">
+    <contact-preview  *ngFor="let contact of contacts" (remove)="onRemove.emit($event)" [contact]="contact"></contact-preview>
+</section>
